@@ -1,0 +1,13 @@
+name: Section
+version: 1.0.0
+description: "Section plugin provides a basic way to work with content sections."
+author:
+  name: Sergey Romanenko
+  email: awilum@yandex.ru
+  url: http://flextype.org
+homepage: https://github.com/flextype-plugins/section
+bugs: https://github.com/flextype-plugins/section/issues
+license: MIT
+
+# Plugin settings
+enabled: true
