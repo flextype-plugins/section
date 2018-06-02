@@ -20,12 +20,24 @@ plugins:
 
 Create section
 ```
-[section_create name=test]Section content here[/section_create]
+[section_create name=section-name]Section content here[/section_create]
 ```
 
 Get section
 ```
-[section name=test]
+[section name=section-name]
+```
+
+## Usage in the template
+
+Define Flextype namespace in the template if it is not defined yet.
+```
+<?php namespace Flextype; ?>
+```
+
+Display section content
+```
+<?php echo Section::get('section-name'); ?>
 ```
 
 ## Settings
