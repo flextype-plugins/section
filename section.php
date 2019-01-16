@@ -20,12 +20,12 @@ use Flextype\Component\{Event\Event, Registry\Registry};
 Event::addListener('onShortcodesInitialized', function () {
 
     // Shortcode: [section_create name=section-name]Section content here[/section_create]
-    Content::shortcode()->addHandler('section_create', function(ShortcodeInterface $s) {
+    Entries::shortcode()->addHandler('section_create', function(ShortcodeInterface $s) {
         Registry::set('sections.section_'.$s->getParameter('name'), $s->getContent());
     });
 
     // Shortcode: [section name=section-name]
-    Content::shortcode()->addHandler('section', function(ShortcodeInterface $s) {
+    Entries::shortcode()->addHandler('section', function(ShortcodeInterface $s) {
         return Registry::get('sections.section_'.$s->getParameter('name'));
     });
 });
@@ -43,6 +43,6 @@ class Section
      */
     public static function get($section_name)
     {
-        return Content::processContent(Registry::get('sections.section_'.$section_name));
+        return Entries::processContent(Registry::get('sections.section_'.$section_name));
     }
 }
