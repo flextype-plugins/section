@@ -1,6 +1,6 @@
 # Section Plugin for [Flextype](http://flextype.org/)
-![version](https://img.shields.io/badge/version-1.1.2-brightgreen.svg?style=flat-square)
-![Flextype](https://img.shields.io/badge/Flextype-0.8.3-green.svg?style=flat-square)
+![version](https://img.shields.io/badge/version-1.2.1-brightgreen.svg?style=flat-square)
+![Flextype](https://img.shields.io/badge/Flextype-0.9.0-green.svg?style=flat-square)
 ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 
 Section plugin provides a basic way to work with content sections.
@@ -20,23 +20,13 @@ Get section
 [section name=section-name]
 ```
 
-## Usage in the template
-
-Define Flextype namespace in the template if it is not defined yet.
-```
-<?php namespace Flextype; ?>
-```
-
-Display section content
-```
-<?= Section::get('section-name') ?>
-```
-
 ## Settings
+enabled: true or false to disable the plugin
 
-```yaml
-enabled: true # or `false` to disable the plugin
+```json
+{
+    "enabled": true
+}
 ```
-
 ## License
 See [LICENSE](https://github.com/flextype-plugins/section/blob/master/LICENSE)
