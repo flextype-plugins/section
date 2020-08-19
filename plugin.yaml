@@ -1,5 +1,5 @@
 name: Section
-version: 1.6.0
+version: 1.7.0
 icon: fas fa-layer-group
 description: Section plugin provides a basic way to work with content sections.
 author:
@@ -11,4 +11,4 @@ bugs: https://github.com/flextype-plugins/section/issues
 license: MIT
 
 dependencies:
-  flextype: 0.9.9
+  flextype: 0.9.10
