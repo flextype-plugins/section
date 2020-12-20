@@ -1,5 +1,5 @@
 <a name="1.9.0"></a>
-# [1.8.0](https://github.com/flextype-plugins/section) (2020-12-20)
+# [1.9.0](https://github.com/flextype-plugins/section) (2020-12-20)
 
 ### Features
 
