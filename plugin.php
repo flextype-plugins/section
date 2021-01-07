@@ -2,6 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Flextype;
+namespace Flextype\Plugin\Section;
 
-include __DIR__ . '/bootstrap.php';
+use Thunder\Shortcode\ShortcodeFacade;
+use Thunder\Shortcode\Shortcode\ShortcodeInterface;
+
+// Shortcode: [section_create id=section-uid]Section content here[/section_create]
+flextype('parsers')->shortcode()->addHandler('section_create', function (ShortcodeInterface $s) {
+    flextype('registry')->set('sections.' . $s->getParameter('id'), $s->getContent());
+});
+
+// Shortcode: [section_fetch id=section-uid]
+flextype('parsers')->shortcode()->addHandler('section_fetch', function (ShortcodeInterface $s) {
+    return flextype('registry')->get('sections.' . $s->getParameter('id'));
+});

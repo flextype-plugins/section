@@ -1,6 +1,8 @@
 name: Section
-version: 1.11.0
-icon: fas fa-layer-group
+version: 1.12.0
+icon:
+  name: layer-group
+  set: "fontawesome|solid"
 description: Section plugin provides a basic way to work with content sections.
 author:
   name: Sergey Romanenko
