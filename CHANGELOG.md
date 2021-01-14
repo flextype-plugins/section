@@ -1,3 +1,11 @@
+<a name="1.13.0"></a>
+# [1.13.0](https://github.com/flextype-plugins/section) (2021-01-14)
+
+### Features
+
+* **core** update code base for new Flextype 0.9.16
+
+
 <a name="1.12.0"></a>
 # [1.12.0](https://github.com/flextype-plugins/section) (2021-01-07)
 
